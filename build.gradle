@@ -40,6 +40,11 @@ task coverage(type: JacocoReport) {
     }
 }
 
+task runChecks(type: Exec) {
+    executable 'bash'
+    args './.github/run-checks.sh'
+}
+
 dependencies {
     String jUnitVersion = '5.4.0'
     String javaFxVersion = '17.0.7'
@@ -70,3 +75,6 @@ shadowJar {
 }
 
 defaultTasks 'clean', 'test'
+
+check.dependsOn coverage
+check.dependsOn runChecks
