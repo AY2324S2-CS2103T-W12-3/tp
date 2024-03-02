@@ -24,6 +24,7 @@ import seedu.address.model.person.fields.Email;
 import seedu.address.model.person.fields.Name;
 import seedu.address.model.person.fields.Phone;
 import seedu.address.model.person.fields.Tags;
+import seedu.address.model.person.Remark;
 
 /**
  * Edits the details of an existing person in the address book.
@@ -97,8 +98,9 @@ public class EditCommand extends Command {
         Email updatedEmail = editPersonDescriptor.getEmail().orElse(personToEdit.getEmail());
         Address updatedAddress = editPersonDescriptor.getAddress().orElse(personToEdit.getAddress());
         Tags updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
+        Remark updatedRemark = personToEdit.getRemark();
 
-        return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedTags);
+        return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedRemark, updatedTags);
     }
 
     @Override

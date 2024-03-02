@@ -3,6 +3,7 @@ package seedu.address.model.person;
 import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 
 import java.util.Objects;
+import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,30 +28,37 @@ public class Person {
 
     // Data fields
     private final Address address;
+    private final Remark remark;
     private final Tags tags;
 
     /**
      * Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Tags tags) {
+    public Person(Name name, Phone phone, Email email, Address address, Remark remark, Tags tags) {
         requireAllNonNull(name, phone, email, address, tags);
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.remark = remark;
         this.tags = tags;
     }
 
     @JsonCreator
     private Person(@JsonProperty("name") String name, @JsonProperty("phone") String phone,
                    @JsonProperty("email") String email, @JsonProperty("address") String address,
-                   @JsonProperty("tags") String[] tagNames) {
+                   @JsonProperty("remark") String remark, @JsonProperty("tags") String[] tagNames) {
         requireAllNonNull(name, phone, email, address, tagNames);
         this.name = new Name(name);
         this.phone = new Phone(phone);
         this.email = new Email(email);
         this.address = new Address(address);
+        this.remark = null;
         this.tags = new Tags(tagNames);
+    }
+
+    public Remark getRemark() {
+        return remark;
     }
 
     public Name getName() {

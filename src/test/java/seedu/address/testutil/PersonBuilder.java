@@ -1,6 +1,7 @@
 package seedu.address.testutil;
 
 import seedu.address.model.person.Person;
+import seedu.address.model.person.Remark;
 import seedu.address.model.person.fields.Address;
 import seedu.address.model.person.fields.Email;
 import seedu.address.model.person.fields.Name;
@@ -88,7 +89,7 @@ public class PersonBuilder {
     }
 
     public Person build() {
-        return new Person(name, phone, email, address, tags);
+        return new Person(name, phone, email, address, new Remark(""), tags);
     }
 
 }
