@@ -8,7 +8,7 @@
         "about-us": "About Us",
         "project-team": "Project team",
         "tang-yetong": "Tang Yetong",
-        "jane-doe": "Jane Doe",
+        "yee-jun-hyeok-bryan": "Yee Jun Hyeok Bryan",
         "johnny-doe": "Johnny Doe",
         "jean-doe": "Jean Doe",
         "james-doe": "James Doe"
@@ -132,6 +132,14 @@
       "title": "",
       "headings": {
         "assetbook-3": "AssetBook-3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/bryanyee33.md",
+      "title": "Bryan Yee's Project Portfolio Page",
+      "headings": {
+        "project-assetbook-3": "Project: AssetBook-3"
       },
       "headingKeywords": {}
     },
