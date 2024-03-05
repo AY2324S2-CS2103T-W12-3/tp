@@ -11,8 +11,7 @@
         "leong-heng-yew": "Leong Heng Yew",
         "yee-jun-hyeok-bryan": "Yee Jun Hyeok Bryan",
         "muhammad-rizki-bayuaji": "Muhammad Rizki Bayuaji",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "guk-yi-siong": "Guk Yi Siong"
       },
       "headingKeywords": {}
     },
@@ -171,6 +170,14 @@
     {
       "src": "team/rizkidelta.md",
       "title": "Muhammad Rizki Bayuaji's Project Portfolio Page",
+      "headings": {
+        "project-assetbook3": "Project: AssetBook3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/yisiox.md",
+      "title": "Guk Yi Siong's Project Portfolio Page",
       "headings": {
         "project-assetbook3": "Project: AssetBook3"
       },
