@@ -266,7 +266,7 @@ with(this){return _c('ol',[_c('li',[_v("Target user is clearly narrowed down to 
 with(this){return _c('h4',{attrs:{"id":"codebase"}},[_v("Codebase"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#codebase","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("Must follow CS2103/T coding standards and code quality guidelines.")]),_v(" "),_c('li',[_v("Must demonstrate evidence of:")]),_v(" "),_c('li',[_v("logging")]),_v(" "),_c('li',[_v("exceptions")]),_v(" "),_c('li',[_v("assertions")]),_v(" "),_c('li',[_v("defensive coding")]),_v(" "),_c('li',[_v("Should have Single Level of Abstraction Principle (SLAP) applied at a reasonable level.")]),_v(" "),_c('li',[_v("Should not have any noticeable code duplication.")]),_v(" "),_c('li',[_v("Should be easily extensible for new features.")]),_v(" "),_c('li',[_v("Should have high level testability with good coverage.")]),_v(" "),_c('li',[_v("Should have little to no bugs.")])])}
+with(this){return _c('ol',[_c('li',[_v("Must follow CS2103/T coding standards and code quality guidelines.")]),_v(" "),_c('li',[_v("Must demonstrate evidence of:\n"),_c('ul',[_c('li',[_v("logging")]),_v(" "),_c('li',[_v("exceptions")]),_v(" "),_c('li',[_v("assertions")]),_v(" "),_c('li',[_v("defensive coding")])])]),_v(" "),_c('li',[_v("Should have Single Level of Abstraction Principle (SLAP) applied at a reasonable level.")]),_v(" "),_c('li',[_v("Should not have any noticeable code duplication.")]),_v(" "),_c('li',[_v("Should be easily extensible for new features.")]),_v(" "),_c('li',[_v("Should have high level testability with good coverage.")]),_v(" "),_c('li',[_v("Should have little to no bugs.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"program"}},[_v("Program"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#program","onclick":"event.stopPropagation()"}})])}
@@ -284,7 +284,7 @@ with(this){return _c('ol',[_c('li',[_v("The target user should understand how to
 with(this){return _c('h4',{attrs:{"id":"project-management"}},[_v("Project Management"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#project-management","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("Project should be done iteratively and incrementally.")]),_v(" "),_c('li',[_v("Project should demonstrate good use of these GitHub mechanisms:")]),_v(" "),_c('li',[_v("milestones")]),_v(" "),_c('li',[_v("releases")]),_v(" "),_c('li',[_v("issue tracker (with good task definition, assignment, and tracking)")]),_v(" "),_c('li',[_v("PRs, and PR reviews")]),_v(" "),_c('li',[_v("Project should demonstrate good use of version control.")]),_v(" "),_c('li',[_v("Developers should attempt to use the forking workflow at least for the early stages of the project.")]),_v(" "),_c('li',[_v("Developers should make good use of time buffers.")])])}
+with(this){return _c('ol',[_c('li',[_v("Project should be done iteratively and incrementally.")]),_v(" "),_c('li',[_v("Project should demonstrate good use of these GitHub mechanisms:\n"),_c('ul',[_c('li',[_v("milestones")]),_v(" "),_c('li',[_v("releases")]),_v(" "),_c('li',[_v("issue tracker (with good task definition, assignment, and tracking)")]),_v(" "),_c('li',[_v("PRs, and PR reviews")])])]),_v(" "),_c('li',[_v("Project should demonstrate good use of version control.")]),_v(" "),_c('li',[_v("Developers should attempt to use the forking workflow at least for the early stages of the project.")]),_v(" "),_c('li',[_v("Developers should make good use of time buffers.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"glossary"}},[_v("Glossary"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#glossary","onclick":"event.stopPropagation()"}})])}
@@ -314,6 +314,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Wed, 6 Mar 2024, 15:43:02 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Wed, 6 Mar 2024, 15:57:35 GMT+8]")])])])}
 }];
   
