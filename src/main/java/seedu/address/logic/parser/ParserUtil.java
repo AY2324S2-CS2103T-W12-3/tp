@@ -7,6 +7,7 @@ import java.util.Collection;
 import seedu.address.commons.core.index.Index;
 import seedu.address.commons.util.StringUtil;
 import seedu.address.logic.parser.exceptions.ParseException;
+import seedu.address.model.person.Remark;
 import seedu.address.model.person.fields.Address;
 import seedu.address.model.person.fields.Email;
 import seedu.address.model.person.fields.Name;
@@ -104,6 +105,15 @@ public class ParserUtil {
         } catch (IllegalArgumentException e) {
             throw new ParseException(Tag.MESSAGE_CONSTRAINTS);
         }
+    }
+
+    public static Remark parseRemark(String remark) throws ParseException {
+        requireNonNull(remark);
+        String trimmedRemark = remark.trim();
+        if (!Remark.isValidRemark(trimmedRemark)) {
+            throw new ParseException(Remark.MESSAGE_CONSTRAINTS);
+        }
+        return new Remark(trimmedRemark);
     }
 
 }

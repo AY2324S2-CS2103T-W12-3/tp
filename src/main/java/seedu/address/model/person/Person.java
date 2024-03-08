@@ -27,29 +27,32 @@ public class Person {
 
     // Data fields
     private final Address address;
+    private final Remark remark;
     private final Tags tags;
 
     /**
      * Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Tags tags) {
-        requireAllNonNull(name, phone, email, address, tags);
+    public Person(Name name, Phone phone, Email email, Address address, Remark remark, Tags tags) {
+        requireAllNonNull(name, phone, email, address, tags, remark);
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
         this.tags = tags;
+        this.remark = remark;
     }
 
     @JsonCreator
     private Person(@JsonProperty("name") String name, @JsonProperty("phone") String phone,
                    @JsonProperty("email") String email, @JsonProperty("address") String address,
-                   @JsonProperty("tags") String[] tagNames) {
-        requireAllNonNull(name, phone, email, address, tagNames);
+                   @JsonProperty("tags") String[] tagNames, @JsonProperty("remark") String remark) {
+        requireAllNonNull(name, phone, email, address, tagNames,remark);
         this.name = new Name(name);
         this.phone = new Phone(phone);
         this.email = new Email(email);
         this.address = new Address(address);
+        this.remark = new Remark(remark);
         this.tags = new Tags(tagNames);
     }
 
@@ -72,6 +75,8 @@ public class Person {
     public Tags getTags() {
         return tags;
     }
+
+    public Remark getRemark() {return remark;}
 
     /**
      * Returns true if both persons have the same name.
