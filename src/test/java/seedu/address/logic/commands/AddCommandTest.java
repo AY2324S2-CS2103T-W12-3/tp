@@ -35,9 +35,11 @@ import static seedu.address.logic.commands.CommandTestUtil.VALID_TAG_HUSBAND;
 import static seedu.address.logic.commands.CommandTestUtil.assertParseFailure;
 import static seedu.address.logic.commands.CommandTestUtil.assertParseSuccess;
 import static seedu.address.model.person.fields.Address.PREFIX_ADDRESS;
+import static seedu.address.model.person.fields.Assets.PREFIX_ASSET;
 import static seedu.address.model.person.fields.Email.PREFIX_EMAIL;
 import static seedu.address.model.person.fields.Name.PREFIX_NAME;
 import static seedu.address.model.person.fields.Phone.PREFIX_PHONE;
+import static seedu.address.model.person.fields.Tags.PREFIX_TAG;
 import static seedu.address.testutil.Assert.assertThrows;
 import static seedu.address.testutil.TypicalPersons.ALICE;
 import static seedu.address.testutil.TypicalPersons.AMY;
@@ -263,6 +265,33 @@ public class AddCommandTest {
         assertParseFailure(AddCommand::of, PREAMBLE_NON_EMPTY + NAME_DESC_BOB + PHONE_DESC_BOB + EMAIL_DESC_BOB
                         + ADDRESS_DESC_BOB + TAG_DESC_HUSBAND + TAG_DESC_FRIEND + ASSET_DESC_AIRCON + ASSET_DESC_HAMMER,
                 String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddCommand.MESSAGE_USAGE));
+    }
+
+    @Test
+    public void of_emptyValue_failure() {
+        // Empty name
+        assertParseFailure(AddCommand::of, " " + PREFIX_NAME + PHONE_DESC_BOB + EMAIL_DESC_BOB + ADDRESS_DESC_BOB
+                + TAG_DESC_HUSBAND + TAG_DESC_FRIEND + ASSET_DESC_AIRCON + ASSET_DESC_HAMMER);
+
+        // Empty phone
+        assertParseFailure(AddCommand::of, NAME_DESC_BOB + " " + PREFIX_PHONE + EMAIL_DESC_BOB + ADDRESS_DESC_BOB
+                + TAG_DESC_HUSBAND + TAG_DESC_FRIEND + ASSET_DESC_AIRCON + ASSET_DESC_HAMMER);
+
+        // Empty Email
+        assertParseFailure(AddCommand::of, NAME_DESC_BOB + PHONE_DESC_BOB + " " + PREFIX_EMAIL + ADDRESS_DESC_BOB
+                + TAG_DESC_HUSBAND + TAG_DESC_FRIEND + ASSET_DESC_AIRCON + ASSET_DESC_HAMMER);
+
+        // Empty Tag
+        assertParseFailure(AddCommand::of, NAME_DESC_BOB + PHONE_DESC_BOB + EMAIL_DESC_BOB + ADDRESS_DESC_BOB
+                + TAG_DESC_HUSBAND + " " + PREFIX_TAG + ASSET_DESC_HAMMER);
+
+    }
+
+    @Test
+    public void of_parametersInDifferentOrder_success() {
+        Person expectedPerson = new PersonBuilder(AMY).withTags().withAssets().build();
+        assertParseSuccess(AddCommand::of, EMAIL_DESC_AMY + PHONE_DESC_AMY + NAME_DESC_AMY  + ADDRESS_DESC_AMY,
+                new AddCommand(expectedPerson));
     }
 
     @Test
