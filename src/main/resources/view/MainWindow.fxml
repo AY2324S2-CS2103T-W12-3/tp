@@ -14,6 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <fx:root type="javafx.stage.Stage" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
          title="AssetBook-3" minWidth="450" minHeight="600" onCloseRequest="#handleExit">
   <icons>
@@ -40,7 +41,14 @@
           <padding>
             <Insets top="10" right="15" bottom="10" left="15" />
           </padding>
-          <Label fx:id="name" text="AssetBook-3" styleClass="title_label" />
+          <children>
+            <ImageView fx:id="iconImageView" preserveRatio="true" fitWidth="50" fitHeight="50"/>
+            <Label fx:id="iconName" text="AssetBook-3" styleClass="title_label" HBox.hgrow="ALWAYS">
+              <padding>
+                <Insets left="12" top="5"/>
+              </padding>
+            </Label>
+          </children>
         </HBox>
 
         <VBox fx:id="personList" styleClass="pane-with-border" minWidth="340" prefWidth="340" VBox.vgrow="ALWAYS">
