@@ -51,6 +51,7 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "asset-feature": "Asset feature",
         "find-feature": "Find feature",
         "undo-redo-feature": "Undo/Redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
