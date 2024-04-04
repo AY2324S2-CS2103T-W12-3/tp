@@ -38,9 +38,9 @@
     },
     {
       "src": "DeveloperGuide.md",
-      "title": "Developer Guide",
+      "title": "AssetBook Developer Guide",
       "headings": {
-        "ab-3-developer-guide": "AB-3 Developer Guide",
+        "assetbook-developer-guide": "AssetBook Developer Guide",
         "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
@@ -108,9 +108,9 @@
     },
     {
       "src": "UserGuide.md",
-      "title": "User Guide",
+      "title": "AssetBook User Guide",
       "headings": {
-        "assetbook-3-user-guide": "AssetBook-3 User Guide",
+        "assetbook-user-guide": "AssetBook User Guide",
         "introduction": "Introduction",
         "using-this-guide": "Using this Guide",
         "table-of-contents": "Table of Contents",
@@ -140,7 +140,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "assetbook-3": "AssetBook-3"
+        "assetbook": "AssetBook"
       },
       "headingKeywords": {}
     },
@@ -156,7 +156,7 @@
       "src": "team/bryanyee33.md",
       "title": "Bryan Yee's Project Portfolio Page",
       "headings": {
-        "project-assetbook-3": "Project: AssetBook-3"
+        "project-assetbook": "Project: AssetBook"
       },
       "headingKeywords": {}
     },
