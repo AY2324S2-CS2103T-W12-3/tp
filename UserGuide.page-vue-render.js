@@ -164,13 +164,13 @@ with(this){return _c('h4',{attrs:{"id":"editing-assets"}},[_v("Editing Assets"),
 with(this){return _c('ol',[_c('li',[_c('p',[_c('strong',[_v("Click on the Command Input Box")]),_v(":\nStart by clicking into the command input box located within the AssetBook interface.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Enter the Edit Asset Command")]),_v(":\nIf you need to rename an asset, for example, changing \"screwdriver\" to \"screw\", use the following format for your command:")]),_v(" "),_c('p',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("asset o\\screwdriver n\\screw")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',{attrs:{"align":"center"}},[_c('img',{staticStyle:{"width":"90%"},attrs:{"src":"/tp/images/tutorial-editA-1.png"}})])}
+with(this){return _c('p',{attrs:{"align":"center"}},[_c('img',{staticStyle:{"width":"90%"},attrs:{"src":"/tp/images/tutorial-asset-1.png"}})])}
 },function anonymous(
 ) {
 with(this){return _c('ol',{attrs:{"start":"3"}},[_c('li',[_c('p',[_c('strong',[_v("Execute the Command")]),_v(":\nAfter entering the command, press "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Enter")]),_v(". This action will update the asset's details in AssetBook.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Confirmation")]),_v(":\nWait for a confirmation message in AssetBook to ensure that the asset has been successfully updated.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',{attrs:{"align":"center"}},[_c('img',{staticStyle:{"width":"90%"},attrs:{"src":"/tp/images/tutorial-editA-2.png"}})])}
+with(this){return _c('p',{attrs:{"align":"center"}},[_c('img',{staticStyle:{"width":"90%"},attrs:{"src":"/tp/images/tutorial-asset-2.png"}})])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"features"}},[_v("Features"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#features","onclick":"event.stopPropagation()"}})])}
@@ -200,7 +200,7 @@ with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hlj
 with(this){return _c('h4',{attrs:{"id":"example"}},[_v("Example"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#example","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("Add a new contact associated with the asset "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("L293D")]),_v(":"),_c('br'),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add n/John Doe e/johndoe@example.com a/574 Ang Mo Kio Ave 10 p/12345678 A/L293D")])])])}
+with(this){return _c('ul',[_c('li',[_v("Add a new contact associated with the asset "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("L293D")]),_v(":"),_c('br'),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add n\\John Doe e\\johndoe@example.com a\\574 Ang Mo Kio Ave 10 p\\12345678 A\\L293D")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',{attrs:{"align":"center"}},[_c('img',{staticStyle:{"width":"90%"},attrs:{"src":"/tp/images/example-add-before.png"}})])}
@@ -458,6 +458,6 @@ with(this){return _c('h4',{attrs:{"id":"parameter"}},[_v("Parameter"),_c('a',{st
 with(this){return _c('p',[_v("An item of data that a command expects to be entered by the user. For example, name is a parameter of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add")]),_v(" command.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Fri, 5 Apr 2024, 9:21:03 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Wed, 10 Apr 2024, 3:40:47 GMT+8]")])])])}
 }];
   
