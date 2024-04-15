@@ -41,7 +41,6 @@
       "title": "AssetBook Developer Guide",
       "headings": {
         "assetbook-developer-guide": "AssetBook Developer Guide",
-        "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
         "architecture": "Architecture",
@@ -53,9 +52,8 @@
         "implementation": "Implementation",
         "asset-feature": "Asset feature",
         "find-feature": "Find feature",
-        "edit-asset-feature": "Edit Asset feature",
         "undo-redo-feature": "Undo/Redo feature",
-        "proposed-data-archiving": "[Proposed] Data archiving",
+        "command-history-feature": "Command History feature",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
