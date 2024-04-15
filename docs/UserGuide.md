@@ -629,13 +629,26 @@ Displays a link to this user guide.
 
 Format: `help`
 
+<box type="tip" seamless>
+
+You can press the `F1` key to display the link as well.
+
+</box>
+
 ---
 
 ### Exiting the Application: `exit`
 
-Exits the application. Equivalent to pressing `X` on the top right corner on Windows, and top left corner on MacOS.
+Saves the current settings for application layout and window size, then exits the application. There is no confirmation
+message.
 
 Format: `exit`
+
+<box type="info" seamless>
+
+This is equivalent to closing the GUI window (e.g. pressing the 'X' in the top right corner in Windows).
+
+</box>
 
 ---
 
