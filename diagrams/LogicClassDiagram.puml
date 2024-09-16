@@ -1,0 +1,55 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor LOGIC_COLOR_T4
+skinparam classBackgroundColor LOGIC_COLOR
+
+package Logic as LogicPackage {
+
+Class AddressBookParser
+
+Class "<<enumeration>>\nCommandType" as CommandType
+Class XYZCommand
+Class "{abstract}\nCommand" as Command
+Class CommandHistory
+Class "<<interface>>\nLogic" as Logic
+Class LogicManager
+
+Class ArgumentMultimap
+Class ArgumentTokenizer
+Class ParserUtil
+}
+
+package Model {
+}
+
+package Storage {
+}
+
+Class HiddenOutside #FFFFFF
+HiddenOutside ..> Logic
+
+LogicManager .up.|> Logic
+LogicManager ..> AddressBookParser : parses with >
+LogicManager .down.> Command : executes >
+LogicManager -left-> CommandHistory
+
+AddressBookParser ..> CommandType : uses >
+
+CommandType .right.> XYZCommand : creates >
+
+XYZCommand -up-|> Command
+
+LogicManager --> Model
+LogicManager -right-> Storage
+
+Command .right.> Model
+
+XYZCommand ..> ArgumentMultimap
+XYZCommand ..> ArgumentTokenizer
+XYZCommand ..> ParserUtil
+ArgumentTokenizer .left.> ArgumentMultimap
+
+ArgumentMultimap --> Model
+ArgumentTokenizer ..> Model
+@enduml

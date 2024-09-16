@@ -1,0 +1,17 @@
+@startuml
+!include style.puml
+skinparam ClassFontColor #000000
+skinparam ClassBorderColor #000000
+skinparam ClassBackgroundColor #FFFFAA
+
+title After command "clear"
+
+rectangle AddressBook {
+    class "undoStack\n----\nState 1\nState 0" as undoStack
+    class "persons list\n----\nState 3" as persons
+    class "redoStack\n----" as redoStack
+}
+note bottom: State 2 deleted.
+undoStack -[hidden]right- persons
+persons -[hidden]right- redoStack
+@end
